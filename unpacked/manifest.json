@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Safe Search Enforce",
+  "version": "0.0.1 Dev",
+  "description": "Enforces Safe Search with custom rules configurable.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all-urls>",
+    "*://*/*"
+  ],
+  "options_ui": {
+    "page": "config.html",
+    "open_in_tab": true
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "run_at": "document_start",
+      "js": [
+        "script.js"
+      ]
+    }
+  ]
+}
