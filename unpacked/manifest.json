@@ -23,7 +23,7 @@
       ],
       "run_at": "document_start",
       "js": [
-        "script.js"
+        "enforce.js"
       ]
     }
   ]
