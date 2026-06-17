@@ -1,3 +1,5 @@
+const listSafe = await chrome.storage.sync.get(["URLS"]);
+SafeUrls = listSafe.URLS
 let currentUrl = window.location.href()
 if currentUrl == "https://www.duckduck.go" {
   // Parse a full URL string
