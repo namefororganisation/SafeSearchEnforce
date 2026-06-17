@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Safe Search Enforce",
-  "version": "0.0.1 Dev",
+  "version": "0.0.1 Dev Version",
   "description": "Enforces Safe Search with custom rules configurable.",
   "permissions": [
     "activeTab",
